@@ -197,12 +197,12 @@ async def badge_shop(message):
 
 async def mascot_shop(message):
     mascots = {'\U0001F9C1':250, '\U0001F468':250, '\U0001F34C':5000, '\U0001F30E':5000, '\U0001F438':25000, '\U0001F431':25000, '\U0001F47D':50000,'\U0001F435':50000}
-    filenames = {'\U0001F9C1':"nyan.gif", '\U0001F468':"blink.gif", '\U0001F34C':"banana.gif", '\U0001F30E':"earth.gif", '\U0001F438':"pepe.gif", '\U0001F431':"catjam.gif", '\U0001F47D':"alien.gif",'\U0001F435':"monkey.gif"}
+    filenames = {'\U0001F9C1':"media/nyan.gif", '\U0001F468':"media/blink.gif", '\U0001F34C':"media/banana.gif", '\U0001F30E':"media/earth.gif", '\U0001F438':"media/pepe.gif", '\U0001F431':"media/catjam.gif", '\U0001F47D':"media/alien.gif",'\U0001F435':"media/monkey.gif"}
 
     embed = discord.Embed(color=0xFFFF00)
     embed.add_field(name="MASCOT SHOP", value="Animated collectibles displayed on your profile\n‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾", inline=False)
-    file = discord.File("mascotshop.gif")
-    embed.set_image(url="attachment://mascotshop.gif")
+    file = discord.File("media/mascotshop.gif")
+    embed.set_image(url="attachment://media/mascotshop.gif")
     embed.set_footer(text="Click the matching icon below to buy a mascot")
     mes = await message.channel.send(embed=embed, file=file)
     for emoji in mascots.keys():
