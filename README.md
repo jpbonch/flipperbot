@@ -1,0 +1,2 @@
+# flipperbot
+Discord gaming bot
